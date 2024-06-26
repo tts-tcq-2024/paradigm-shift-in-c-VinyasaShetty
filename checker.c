@@ -3,6 +3,7 @@
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
   ((temperature < 0 || temperature > 45) || (soc < 20 || soc > 80) || (chargeRate > 0.8)) ? return 0: return 1;
+}
   
 
 int main() {
