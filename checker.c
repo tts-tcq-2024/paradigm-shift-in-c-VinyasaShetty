@@ -10,7 +10,7 @@ if(((temperature < 0 || temperature > 45)) || ((soc < 20 || soc > 80)) || ((char
     return 0;  
 }
 return 1;
-  
+}
 
 int main() {
   assert(batteryIsOk(25, 70, 0.7));
