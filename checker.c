@@ -12,9 +12,9 @@ if(IsTemperatureoutofRange(temperature) || socOutofRange(soc) || chargeRateOutof
 }
     return 1;    
 }
-int IsTemperatureoutofRange(float temp)
+int IsTemperatureoutofRange(float temperature)
 {
-    return (temp <0 || temp >45 ) ? 1 :0;        
+    return (temperature < 0 || temperature > 45 ) ? 1 :0;        
 }
 int socOutofRange(float soc)
 {
